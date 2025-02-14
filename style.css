@@ -34,4 +34,41 @@
     color: var(--text-primary);
     transition: background-color 0.3s ease, color 0.3s ease;
   }
+  .navbar {
+    background: var(--bg-secondary);
+    padding: 1rem 2rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 20px var(--border-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--primary);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+  }
+  
+  .nav-link {
+    color: var(--text-primary);
+    text-decoration: none;
+    position: relative;
+    padding: 0.5rem 0;
+    transition: color 0.3s ease;
+  }
   
