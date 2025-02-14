@@ -24,6 +24,39 @@
           <button class="theme-toggle" id="themeToggle">🌓</button>
         </div>
       </nav>
+      <div class="container">
+        <div class="bookmark-form">
+          <form id="addBookmarkForm">
+            <div class="form-group">
+              <label for="title">Title</label>
+              <input
+                type="text"
+                id="title"
+                required
+                placeholder="Enter bookmark title"
+              />
+            </div>
+            <div class="form-group">
+              <label for="url">URL</label>
+              <input
+                type="url"
+                id="url"
+                required
+                placeholder="Enter website URL"
+              />
+            </div>
+            <div class="form-group">
+              <label for="category">Category</label>
+              <select id="category" required>
+                <option value="work">Work</option>
+                <option value="personal">Personal</option>
+                <option value="education">Education</option>
+                <option value="entertainment">Entertainment</option>
+              </select>
+            </div>
+            <button type="submit">Add Bookmark</button>
+          </form>
+        </div>
     
 </body>
 </html>
