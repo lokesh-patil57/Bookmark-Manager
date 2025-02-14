@@ -156,4 +156,80 @@
     font-size: 1rem;
     transition: all 0.3s ease;
   }
+  .bookmarks-list {
+    background: var(--bg-secondary);
+    border-radius: 15px;
+    box-shadow: 0 8px 32px var(--border-color);
+    overflow: hidden;
+  }
+  
+  .bookmark-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+    border-bottom: 1px solid var(--border-color);
+    background: var(--bg-primary);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    animation: fadeIn 0.5s ease;
+  }
+  
+  .bookmark-item:hover {
+    transform: translateX(5px);
+    background: var(--bg-secondary);
+  }
+  
+  .bookmark-category {
+    padding: 0.25rem 0.75rem;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    background: var(--primary);
+    color: white;
+    margin-left: 1rem;
+  }
+  
+  @keyframes slideUp {
+    from {
+      transform: translateY(20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      padding: 1rem;
+    }
+  
+    .nav-links {
+      margin-top: 1rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    .search-bar {
+      width: 100%;
+      margin: 1rem 0;
+    }
+  
+    .search-bar input {
+      width: 100%;
+    }
+  }
+  
   
